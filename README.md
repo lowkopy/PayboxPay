@@ -23,7 +23,7 @@ $ composer require payboxmoney/pay "^1.2"
 
 ### Инициализация Напрямую через PayBox
 
-[Ссылка на описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Inicializaciya-Napryamuyu-cherez-PayBox)
+[Подробное описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Inicializaciya-Napryamuyu-cherez-PayBox)
 
 #### Пример #1
 ~~~php
@@ -78,7 +78,7 @@ if($paybox->init()) {
 
 ### Запрос на клиринг транзакций по банковским картам
 
-[Ссылка на описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Vspomogatelnye-zaprosy/paths/~1do_capture.php/post)
+[Подробное описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Vspomogatelnye-zaprosy/paths/~1do_capture.php/post)
 
 #### Пример:
 ~~~php
@@ -96,7 +96,7 @@ $result = $paybox->capture();
 
 ### Запрос на получение статуса платежа
 
-[Ссылка на описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Vspomogatelnye-zaprosy/paths/~1get_status.php/post)
+[Подробное описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Vspomogatelnye-zaprosy/paths/~1get_status.php/post)
 
 #### Пример:
 ~~~php
@@ -118,7 +118,7 @@ $paymentStatus = $paybox->getStatus(); //partial/pending/ok/failed/revoked/incom
 
 ### Запрос на получение списка платежных систем
 
-[Ссылка на описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Vspomogatelnye-zaprosy/paths/~1ps_list.php/post)
+[Подробное описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Vspomogatelnye-zaprosy/paths/~1ps_list.php/post)
 
 #### Пример:
 ~~~php
@@ -134,7 +134,7 @@ $paymentSystems = $paybox->getPaymentSystems();
 
 ### Отмена платежа до оплаты
 
-[Ссылка на описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Vspomogatelnye-zaprosy/paths/~1cancel.php/post)
+[Подробное описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Vspomogatelnye-zaprosy/paths/~1cancel.php/post)
 
 #### Пример:
 ~~~php
@@ -151,7 +151,7 @@ $result = $paybox->cancelBill();
 
 ### Отмена платежа после оплаты
 
-[Ссылка на описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Vspomogatelnye-zaprosy/paths/~1revoke.php/post)
+[Подробное описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Vspomogatelnye-zaprosy/paths/~1revoke.php/post)
 
 #### Пример:
 ~~~php
@@ -173,7 +173,7 @@ $result = $paybox->revoke();
 
 ### Создание рекуррентного платежа
 
-[Ссылка на описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Rekurrentnyj-platezh)
+[Подробное описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Rekurrentnyj-platezh)
 
 #### Пример:
 ~~~php
@@ -192,7 +192,7 @@ if($paybox->recurringStart($recurrentProfileLifetime)) {
 
 ### Повторение рекуррентного платежа
 
-[Ссылка на описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Rekurrentnyj-platezh/paths/~1make_recurring_payment.php/post)
+[Подробное описание](https://paybox.money/docs/ru/pay-in/3.3#tag/Rekurrentnyj-platezh/paths/~1make_recurring_payment.php/post)
 
 #### Пример:
 ~~~php
