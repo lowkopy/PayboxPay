@@ -26,7 +26,7 @@ use Paybox\Core\Abstractions\Customer as CoreCustomer;
  *
  * @method setId(string $id):bool
  * @method setUserEmail(string $email):bool
- * @method setPhone(real $phone):bool
+ * @method setUserPhone(string $phone):bool
  * @method setIp(string $ip):bool
  *
  */
@@ -36,7 +36,7 @@ final class Customer extends CoreCustomer {
     /**
      * @var int $phone Required. contact phone of customer
      */
-    public $phone;
+    public $userPhone;
 
     /**
      * @var string $ip Required. IP-address of customer
