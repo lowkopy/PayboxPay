@@ -51,6 +51,7 @@ use Paybox\Core\Abstractions\Config as CoreConfig;
  * @method setIsPostponePayment(bool $value):bool
  * @method setIsRecurringStart(bool $value):bool
  * @method setIsTestingMode(bool $value):bool
+ * @method setLanguage(string $value):bool
  *
  */
 
@@ -163,4 +164,10 @@ final class Config extends CoreConfig {
      */
     public $paymentRoute;
 
+    /**
+     * @var string $language Optional
+     * Language of payment pages on the PayBox.money website and (if possible) payment systems.
+     * "en", "ru", "kk", etc.
+     */
+    public $language;
 }
