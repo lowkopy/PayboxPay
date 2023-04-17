@@ -366,7 +366,7 @@ class Facade extends DataContainer implements PaymentInterface {
      */
 
     protected function getBaseUrl():string {
-        return 'https://api.paybox.money/';
+        return 'https://api.freedompay.money/';
     }
 
     /**
