@@ -29,6 +29,7 @@ use Paybox\Core\Abstractions\Order as CoreOrder;
  * @method setAmount(int $amount):bool
  * @method setDescription(string $description):bool
  * @method setRecurringProfile(int $recurringProfileId):bool
+ * @method setCurrency(string $currency):bool
  *
  */
 
@@ -39,5 +40,10 @@ final class Order extends CoreOrder {
      * @see Paybox\Pay\Models\Config::$isRecurringStart
      */
     public $recurringProfile;
+
+    /**
+     * @var string $currency
+     */
+    public $currency;
 
 }
