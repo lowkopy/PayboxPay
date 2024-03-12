@@ -28,12 +28,12 @@ use Paybox\Core\ {
  * @copyright LLC Paybox.money
  * @license GPLv3 @link https://www.gnu.org/licenses/gpl-3.0-standalone.html
  *
- * @property Paybox\Pay\Models\Answer $answer
- * @property Paybox\Pay\Models\Config $config
- * @property Paybox\Pay\Models\Customer $customer
- * @property Paybox\Pay\Models\Merchant $merchant
- * @property Paybox\Pay\Models\Order $order
- * @property Paybox\Pay\Models\Payment $payment
+ * @property \Paybox\Pay\Models\Answer $answer
+ * @property \Paybox\Pay\Models\Config $config
+ * @property \Paybox\Pay\Models\Customer $customer
+ * @property \Paybox\Pay\Models\Merchant $merchant
+ * @property \Paybox\Pay\Models\Order $order
+ * @property \Paybox\Pay\Models\Payment $payment
  *
  */
 
