@@ -39,6 +39,8 @@ use Paybox\Core\ {
 
 class Facade extends DataContainer implements PaymentInterface {
 
+    protected $baseUrl;
+
     /**
      * @var url $redurectUrl for saving link to payment page
      */
@@ -357,6 +359,11 @@ class Facade extends DataContainer implements PaymentInterface {
         return (array) (new \SimpleXMLElement($request['pg_xml']));
     }
 
+    public function setBaseUrl(string $baseUrl): void
+    {
+        $this->baseUrl = $baseUrl;
+    }
+
     /**
      *
      * Get a url of Payment gate
@@ -366,7 +373,7 @@ class Facade extends DataContainer implements PaymentInterface {
      */
 
     protected function getBaseUrl():string {
-        return 'https://api.freedompay.money/';
+        return $this->baseUrl;
     }
 
     /**
